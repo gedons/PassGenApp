@@ -126,6 +126,11 @@
         error: null
       };
     },
+    computed: {
+            isLoggedIn() {
+            return !!localStorage.getItem('token');
+          }
+        },
   methods: {
       async register() {
         try {
@@ -142,6 +147,10 @@
         } catch (error) {
           this.error = error.response.data.message || 'Registration failed. Please try again.';
         }
+      },
+      logout(){
+        localStorage.removeItem('token');
+        router.push('/login');
       }
     }
   };
