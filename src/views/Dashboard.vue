@@ -8,7 +8,7 @@
           <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl ">explore our <br> awesome <span class="underline decoration-gray-800">Features</span></h1>
           
           <p class="mt-4 text-gray-500 xl:mt-6">
-            SecurePass.App lets you  securely store, manage, and access your login credentials. Developed by {DIVINE}, {}, {}, {}, {}
+            SecurePass.App lets you  securely store, manage, and access your login credentials. Developed by Ebube, Kennedy, Emmanuel, Stephen, God'sfavour
           </p>
           
           <h1 class="text-2xl font-semibold mt-6 capitalize text-gray-800 lg:text-4xl">Available Passwords</h1>
