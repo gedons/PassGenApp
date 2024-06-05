@@ -110,7 +110,7 @@
     methods: {
       async generatePassword() {
           try {
-            const response = await axios.post('http://localhost:5000/api/passwords/generate', {
+            const response = await axios.post('https://passgenapp.onrender.com/api/passwords/generate', {
               length: this.passwordLength,
               options: this.options
             });
@@ -150,7 +150,7 @@
               return;
             }
 
-            await axios.post('http://localhost:5000/api/passwords/save', {
+            await axios.post('https://passgenapp.onrender.com/api/passwords/save', {
               password: this.generatedPassword,
               strength: this.strength
             }, {

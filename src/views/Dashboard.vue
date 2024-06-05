@@ -113,7 +113,7 @@
       async fetchPasswords() {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:5000/api/passwords', {
+        const response = await axios.get('https://passgenapp.onrender.com/api/passwords', {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -136,7 +136,7 @@
       async updatePassword() {
         try {
           const token = localStorage.getItem('token');
-          await axios.put(`http://localhost:5000/api/passwords/${this.currentPassword._id}`, this.currentPassword, {
+          await axios.put(`https://passgenapp.onrender.com/api/passwords/${this.currentPassword._id}`, this.currentPassword, {
             headers: {
               'Authorization': `Bearer ${token}`
             }
@@ -155,7 +155,7 @@
         if (confirmation) {
             try {
             const token = localStorage.getItem('token');
-            await axios.delete(`http://localhost:5000/api/passwords/${id}`, {
+            await axios.delete(`https://passgenapp.onrender.com/api/passwords/${id}`, {
               headers: {
                 'Authorization': `Bearer ${token}`
               }
@@ -179,7 +179,7 @@
       async sharePassword(id) {
         try {
           const token = localStorage.getItem('token');
-          const response = await axios.post(`http://localhost:5000/api/passwords/share/${id}`, {}, {
+          const response = await axios.post(`https://passgenapp.onrender.com/api/passwords/share/${id}`, {}, {
             headers: {
               'Authorization': `Bearer ${token}`
             }

@@ -129,7 +129,7 @@
   methods: {
       async register() {
         try {
-          const response = await axios.post('http://localhost:5000/api/auth/register', {
+          const response = await axios.post('https://passgenapp.onrender.com/api/auth/register', {
             name: this.name,
             email: this.email,
             password: this.password

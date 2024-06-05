@@ -31,7 +31,7 @@
       async fetchPassword() {
         const id = this.$route.params.id;
         try {
-          const response = await axios.get(`http://localhost:5000/api/passwords/share/${id}`);
+          const response = await axios.get(`https://passgenapp.onrender.com/api/passwords/share/${id}`);
           this.password = response.data.password;
         } catch (error) {
           this.error = 'Failed to retrieve the password. Please try again.';
