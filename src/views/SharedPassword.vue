@@ -1,5 +1,7 @@
 <template>
+
     <NavBar/>
+
     <div class="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4">
       <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
         <h2 class="text-2xl font-bold mb-4">Shared Password</h2>
@@ -16,7 +18,7 @@
   
   <script>
   import axios from 'axios';
-  import NavBar from '../components/NavBar.vue';
+  import Navbar from '../components/Navbar.vue';
   
   export default {
     components: { NavBar },
