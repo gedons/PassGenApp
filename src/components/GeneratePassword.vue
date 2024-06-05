@@ -76,7 +76,7 @@
 
             <button @click="copyToClipboard" class="w-50 text-gray-900 font-thin underline p-2 rounded">Copy to Clipboard</button>
             <button v-if="isAuthenticated" @click="savePassword" class="w-full bg-gray-800 text-white p-2 rounded">Save Password</button>
-            <router-link to="/login" v-else class="w-50 ml-4 bg-gray-900 font-thin text-white p-2 rounded">Login to save password</router-link>
+            <router-link to="/login" v-else class="w-50 ml-4 bg-gray-900 font-thin text-white p-2 rounded">save password</router-link>
         </div>
       </div>
     </div>
